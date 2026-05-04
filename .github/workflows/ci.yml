@@ -16,10 +16,10 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'
+          distribution: 'temurin'
 
-       - name: Compile Java
-        run: javac src/ciccdemo/HelloWorld.java
+      - name: Compile Java
+        run: javac src/cicddemo/HelloWorld.java
 
       - name: Run Program
-        run: java -cp src ciccdemo.HelloWorld
-
+        run: java -cp src cicddemo.HelloWorld
